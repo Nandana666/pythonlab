@@ -1,0 +1,22 @@
+lt=[]
+n=int(input("Enter no.of terms:"))
+for i in range(n):
+	terms=int(input("Enter terms: "))
+	lt.append(terms)
+twox=lambda x:2**x
+power_of_2=list(map(twox,range(n)))
+print("Power of 2 upto ",n," terms:")
+power_fnctn_list=list(power_of_2)
+print(power_fnctn_list)
+
+
+t=int(input("Enter no of terms:"))
+terms_lst=[]
+for i in range(t):
+        terms=int(input("Enter  terms:"))
+        terms_lst.append(terms)
+powerfnctn=map(lambda x:2**x,terms_lst)
+print("Powers of 2 are:")
+power_fnctn_list=list(powerfnctn)
+print(power_fnctn_list)
+

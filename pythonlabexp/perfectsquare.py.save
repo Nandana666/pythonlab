@@ -1,0 +1,22 @@
+
+def isEven(n):
+	r,c=0
+	while n>0:
+		r=n%10
+		if r%2==0:
+			c+=1
+		n=n/10
+	if c==4:
+		return true
+	else:
+		return false
+def isPerfectsquare(n):
+	for i in range(1,i*i):
+		if (n%i==0) & (n/i==i):
+			return true
+		return false
+s=int(input("Enter starting range:"))
+e=int(input("Enter ending range:"))
+for i in range(s,e):
+	if isPerfectsquare(i) & isEven(i):
+		print(i)
